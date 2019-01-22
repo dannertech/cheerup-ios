@@ -1,0 +1,6 @@
+framework module Pods_cheerup_iosUITests {
+  umbrella header "Pods-cheerup-iosUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
