@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 
 
+
 class PostsViewController: UIViewController {
     
     @IBOutlet var postsImage: UIImageView!

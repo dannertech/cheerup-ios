@@ -10,6 +10,7 @@ target 'cheerup-ios' do
 	pod 'Firebase/Auth'
 	pod 'Firebase/Database'
 	pod 'Firebase/Storage'
+    pod 'SDWebImage','~> 4.0'
 
   target 'cheerup-iosTests' do
     inherit! :search_paths
