@@ -34,8 +34,21 @@ class SettingsViewController: UIViewController {
         self.dismiss(animated: false, completion: nil)
         //self.present(ViewController(), animated: false, completion: nil)
         print("successfully logged out")
+        
+        self.performSegue(withIdentifier: "fromSettingsToViewController", sender: self)
     }
     
+    @IBAction func deleteAccount(_ sender: Any) {
+        let user = Auth.auth().currentUser
+        user?.delete {
+            error in
+            if let error = error {
+                print(error)
+            } else {
+                self.performSegue(withIdentifier: "fromSettingsToViewController", sender: self)
+            }
+        }
+    }
     
     
     

@@ -11,6 +11,8 @@
 		5B017AB89D3F2CEC20702300 /* Pods_cheerup_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 140FA733E81B9BD411483230 /* Pods_cheerup_ios.framework */; };
 		A726AA1121F6E66F001E3B23 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A726AA1021F6E66F001E3B23 /* RoundedButton.swift */; };
 		A726AA1321F6E9E5001E3B23 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A726AA1221F6E9E5001E3B23 /* SettingsViewController.swift */; };
+		A726AA1921F83BAB001E3B23 /* Cheerup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A726AA1821F83BAB001E3B23 /* Cheerup.swift */; };
+		A726AA1B21F8506F001E3B23 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A726AA1A21F8506F001E3B23 /* CustomTableViewCell.swift */; };
 		A73932EF21C4A6740045C5A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73932EE21C4A6740045C5A3 /* AppDelegate.swift */; };
 		A73932F121C4A6740045C5A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73932F021C4A6740045C5A3 /* ViewController.swift */; };
 		A73932F421C4A6740045C5A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A73932F221C4A6740045C5A3 /* Main.storyboard */; };
@@ -53,6 +55,8 @@
 		356A5622D8376F95AC009B9A /* Pods-cheerup-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cheerup-iosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-cheerup-iosTests/Pods-cheerup-iosTests.release.xcconfig"; sourceTree = "<group>"; };
 		A726AA1021F6E66F001E3B23 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		A726AA1221F6E9E5001E3B23 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		A726AA1821F83BAB001E3B23 /* Cheerup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cheerup.swift; sourceTree = "<group>"; };
+		A726AA1A21F8506F001E3B23 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		A73932EB21C4A6740045C5A3 /* cheerup-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cheerup-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A73932EE21C4A6740045C5A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A73932F021C4A6740045C5A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +119,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A726AA1721F83B90001E3B23 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A726AA1821F83BAB001E3B23 /* Cheerup.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		A73932E221C4A6740045C5A3 = {
 			isa = PBXGroup;
 			children = (
@@ -140,9 +152,11 @@
 		A73932ED21C4A6740045C5A3 /* cheerup-ios */ = {
 			isa = PBXGroup;
 			children = (
+				A726AA1721F83B90001E3B23 /* Models */,
 				A73932EE21C4A6740045C5A3 /* AppDelegate.swift */,
 				A73932F021C4A6740045C5A3 /* ViewController.swift */,
 				A73932F221C4A6740045C5A3 /* Main.storyboard */,
+				A726AA1A21F8506F001E3B23 /* CustomTableViewCell.swift */,
 				A726AA1221F6E9E5001E3B23 /* SettingsViewController.swift */,
 				A726AA1021F6E66F001E3B23 /* RoundedButton.swift */,
 				A77DCC7421D3595F0016E7AE /* PostsViewController.swift */,
@@ -426,12 +440,14 @@
 			files = (
 				A77DCC7521D359600016E7AE /* PostsViewController.swift in Sources */,
 				A73932F121C4A6740045C5A3 /* ViewController.swift in Sources */,
+				A726AA1B21F8506F001E3B23 /* CustomTableViewCell.swift in Sources */,
 				A73932F721C4A6740045C5A3 /* cheerup_ios.xcdatamodeld in Sources */,
 				A726AA1121F6E66F001E3B23 /* RoundedButton.swift in Sources */,
 				A739332621C4BDA30045C5A3 /* HomepageViewController.swift in Sources */,
 				A739332221C4BD740045C5A3 /* SignupViewController.swift in Sources */,
 				A739332421C4BD8A0045C5A3 /* LoginViewController.swift in Sources */,
 				A73932EF21C4A6740045C5A3 /* AppDelegate.swift in Sources */,
+				A726AA1921F83BAB001E3B23 /* Cheerup.swift in Sources */,
 				A726AA1321F6E9E5001E3B23 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -618,7 +634,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.DannerOpp.cheerup-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -637,7 +653,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.DannerOpp.cheerup-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

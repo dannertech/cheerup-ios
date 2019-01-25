@@ -11,12 +11,18 @@ import Firebase
 import SDWebImage
 
 
-class PostsViewController: UIViewController {
+class PostsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var postDictionary : NSDictionary?
     var currentPost : String?
     var postData = [Cheerup]()
     
+    
+    
     @IBOutlet var postsImage: UIImageView!
+    @IBOutlet var postsTable: UITableView!
+    
+    @IBOutlet var postText: UILabel!
+    
     
     @IBAction func fromCheerupsToSettings(_ sender: Any) {
         self.performSegue(withIdentifier: "fromCheerupsToSettings", sender: self)
