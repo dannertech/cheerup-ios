@@ -26,7 +26,7 @@ class SignupViewController: UIViewController {
        
     }
     @IBAction func handleSignup(_ sender: Any) {
-        guard let username = usernameField.text else { return }
+        
         guard let email = emailField.text else { return }
         guard let password = passwordField.text else { return }
         
