@@ -24,7 +24,7 @@ class PostsViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     @IBOutlet var postText: UILabel!
     
-    var bannerView: GADBannerView!
+    
     
     
     @IBAction func fromCheerupsToSettings(_ sender: Any) {
@@ -37,13 +37,7 @@ class PostsViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        bannerView = GADBannerView(adSize:kGADAdSizeBanner)
-        addBannerViewToView(bannerView)
-        
-        bannerView.adUnitID = "ca-app-pub-1001703997484038/9885910687"
-        bannerView.rootViewController = self
-        bannerView.load(GADRequest())
-        bannerView.delegate = self
+  
         
         let postsRef = Database.database().reference().child("posts")
         postsRef.observeSingleEvent(of: .value, with: {
@@ -95,26 +89,7 @@ class PostsViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         
     }
-    func addBannerViewToView(_ bannerView: GADBannerView) {
-        bannerView.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(bannerView)
-        view.addConstraints(
-            [NSLayoutConstraint(item: bannerView,
-                                attribute: .bottom,
-                                relatedBy: .equal,
-                                toItem: bottomLayoutGuide,
-                                attribute: .top,
-                                multiplier: 1,
-                                constant: 0),
-             NSLayoutConstraint(item: bannerView,
-                                attribute: .centerX,
-                                relatedBy: .equal,
-                                toItem: view,
-                                attribute: .centerX,
-                                multiplier: 1,
-                                constant: 0)
-        ])
-    }
+   
     
     
     
