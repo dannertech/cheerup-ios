@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wYB-hf-kV6">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -145,8 +145,23 @@
                                                 <constraint firstAttribute="width" constant="255" id="WNt-aq-Akp"/>
                                             </constraints>
                                         </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTh-mU-3u5">
+                                            <rect key="frame" x="115" y="287" width="144" height="37"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <state key="normal" title="Select Image"/>
+                                            <connections>
+                                                <action selector="selectImage:" destination="wYB-hf-kV6" eventType="touchUpInside" id="ghp-GP-hUc"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qxG-6B-JU0">
+                                            <rect key="frame" x="76" y="394" width="225" height="30"/>
+                                            <state key="normal" title="Submit Cheerup"/>
+                                            <connections>
+                                                <action selector="submitCheerup:" destination="wYB-hf-kV6" eventType="touchUpInside" id="E8H-vk-FQe"/>
+                                            </connections>
+                                        </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mm4-1y-gw2" customClass="RoundedButton" customModule="cheerup_ios" customModuleProvider="target">
-                                            <rect key="frame" x="258" y="540" width="57" height="57"/>
+                                            <rect key="frame" x="258" y="463" width="57" height="57"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="57" id="KNe-1F-nHC"/>
@@ -164,7 +179,7 @@
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7z-Np-niN">
-                                            <rect key="frame" x="153" y="535" width="69" height="67"/>
+                                            <rect key="frame" x="153" y="458" width="69" height="67"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="69" id="M5p-1h-39n"/>
                                                 <constraint firstAttribute="height" constant="67" id="YAI-Ty-vZA"/>
@@ -175,7 +190,7 @@
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhc-pu-hkz" customClass="RoundedButton" customModule="cheerup_ios" customModuleProvider="target">
-                                            <rect key="frame" x="50" y="538" width="57" height="57"/>
+                                            <rect key="frame" x="50" y="461" width="57" height="57"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="57" id="ffL-Ae-O0z"/>
@@ -188,41 +203,34 @@
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTh-mU-3u5">
-                                            <rect key="frame" x="115" y="287" width="144" height="37"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                            <state key="normal" title="Select Image"/>
-                                            <connections>
-                                                <action selector="selectImage:" destination="wYB-hf-kV6" eventType="touchUpInside" id="ghp-GP-hUc"/>
-                                            </connections>
-                                        </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qxG-6B-JU0">
-                                            <rect key="frame" x="76" y="394" width="225" height="30"/>
-                                            <state key="normal" title="Submit Cheerup"/>
-                                            <connections>
-                                                <action selector="submitCheerup:" destination="wYB-hf-kV6" eventType="touchUpInside" id="E8H-vk-FQe"/>
-                                            </connections>
-                                        </button>
+                                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vAn-dT-wZW" customClass="GADBannerView">
+                                            <rect key="frame" x="0.0" y="597" width="375" height="70"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="70" id="fvU-e3-5bO"/>
+                                            </constraints>
+                                        </view>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="vAn-dT-wZW" firstAttribute="width" secondItem="Btq-Cc-0pN" secondAttribute="width" id="2vh-1K-VpK"/>
                                         <constraint firstItem="lnN-1y-xzA" firstAttribute="centerX" secondItem="Btq-Cc-0pN" secondAttribute="centerX" id="4Ot-as-Ag4"/>
                                         <constraint firstItem="dTh-mU-3u5" firstAttribute="top" secondItem="lnN-1y-xzA" secondAttribute="bottom" constant="20" id="4US-Qw-yyW"/>
                                         <constraint firstItem="asA-vY-wXY" firstAttribute="top" secondItem="dTh-mU-3u5" secondAttribute="bottom" constant="21" id="8CA-NO-ZU3"/>
                                         <constraint firstItem="dTh-mU-3u5" firstAttribute="centerX" secondItem="Btq-Cc-0pN" secondAttribute="centerX" id="8ag-ng-TmO"/>
-                                        <constraint firstItem="jhc-pu-hkz" firstAttribute="top" secondItem="qxG-6B-JU0" secondAttribute="bottom" constant="114" id="BFK-po-TV7"/>
+                                        <constraint firstItem="e7z-Np-niN" firstAttribute="top" secondItem="qxG-6B-JU0" secondAttribute="bottom" constant="34" id="Fea-wz-VYO"/>
                                         <constraint firstItem="fZ0-GV-Qee" firstAttribute="top" secondItem="Btq-Cc-0pN" secondAttribute="top" constant="73" id="Gjc-wf-Nzs"/>
                                         <constraint firstItem="lnN-1y-xzA" firstAttribute="top" secondItem="fZ0-GV-Qee" secondAttribute="bottom" constant="27" id="HFM-xp-d2Z"/>
                                         <constraint firstItem="e7z-Np-niN" firstAttribute="centerX" secondItem="Btq-Cc-0pN" secondAttribute="centerX" id="JMc-aK-VQT"/>
                                         <constraint firstItem="fZ0-GV-Qee" firstAttribute="centerX" secondItem="Btq-Cc-0pN" secondAttribute="centerX" id="Q4p-Rp-Eqc"/>
                                         <constraint firstItem="asA-vY-wXY" firstAttribute="width" secondItem="Btq-Cc-0pN" secondAttribute="width" multiplier="0.6" id="Z5W-gz-8PB"/>
                                         <constraint firstItem="mm4-1y-gw2" firstAttribute="leading" secondItem="e7z-Np-niN" secondAttribute="trailing" constant="36" id="ZaG-5f-nYi"/>
-                                        <constraint firstItem="mm4-1y-gw2" firstAttribute="top" secondItem="qxG-6B-JU0" secondAttribute="bottom" constant="116" id="a6X-bd-kOm"/>
+                                        <constraint firstItem="jhc-pu-hkz" firstAttribute="top" secondItem="qxG-6B-JU0" secondAttribute="bottom" constant="37" id="f3a-4j-hkQ"/>
                                         <constraint firstItem="qxG-6B-JU0" firstAttribute="leading" secondItem="Btq-Cc-0pN" secondAttribute="leading" constant="76" id="hAY-aj-VVa"/>
                                         <constraint firstItem="asA-vY-wXY" firstAttribute="centerX" secondItem="Btq-Cc-0pN" secondAttribute="centerX" id="rXY-9K-Evw"/>
                                         <constraint firstItem="qxG-6B-JU0" firstAttribute="width" secondItem="Btq-Cc-0pN" secondAttribute="width" multiplier="0.6" id="s2v-B8-hfO"/>
                                         <constraint firstItem="qxG-6B-JU0" firstAttribute="top" secondItem="asA-vY-wXY" secondAttribute="bottom" constant="20" id="sOF-Wt-Ozf"/>
-                                        <constraint firstItem="e7z-Np-niN" firstAttribute="top" secondItem="qxG-6B-JU0" secondAttribute="bottom" constant="111" id="tOE-qJ-EJf"/>
                                         <constraint firstItem="e7z-Np-niN" firstAttribute="leading" secondItem="jhc-pu-hkz" secondAttribute="trailing" constant="46" id="vVy-8F-RjB"/>
+                                        <constraint firstItem="mm4-1y-gw2" firstAttribute="top" secondItem="qxG-6B-JU0" secondAttribute="bottom" constant="39" id="yNZ-LH-o8Y"/>
                                     </constraints>
                                 </view>
                                 <blurEffect style="light"/>
@@ -240,6 +248,7 @@
                         <viewLayoutGuide key="safeArea" id="yBR-QL-7Sq"/>
                     </view>
                     <connections>
+                        <outlet property="bannerView" destination="vAn-dT-wZW" id="v9h-bg-1SL"/>
                         <outlet property="cheerupImage" destination="lnN-1y-xzA" id="gTw-Io-JkC"/>
                         <outlet property="cheerupText" destination="asA-vY-wXY" id="jIK-kO-wFp"/>
                         <segue destination="UQg-pg-O7j" kind="showDetail" identifier="toSettings" id="Nli-IQ-Xo5"/>

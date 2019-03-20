@@ -2,4 +2,54 @@
 <Bucket
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cheerup-ios/PostsViewController.swift"
+            timestampString = "574720825.95306"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "cheerup_ios.PostsViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; cheerup_ios.PostsViewController"
+                  moduleName = "cheerup-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/diamoniquedanner/Desktop/cheerup-ios-master-2/cheerup-ios/PostsViewController.swift"
+                  timestampString = "574732496.440989"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "375">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "cheerup_ios.PostsViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;cheerup_ios.PostsViewController&gt;"
+                  moduleName = "cheerup-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/diamoniquedanner/Desktop/cheerup-ios-master-2/cheerup-ios/PostsViewController.swift"
+                  timestampString = "574732496.453928"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "345">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
