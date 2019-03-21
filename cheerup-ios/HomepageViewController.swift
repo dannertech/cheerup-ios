@@ -1,10 +1,13 @@
 import UIKit
+import Firebase
 import FirebaseAuth
 import FirebaseDatabase
 import FirebaseStorage
 
 
-class HomepageViewController: UIViewController {
+class HomepageViewController: UIViewController, GADBannerViewDelegate {
+    @IBOutlet var bannerView: GADBannerView!
+
     var ref : DatabaseReference!
     var imagePicker: UIImagePickerController!
     var photoURL : URL!
@@ -35,6 +38,11 @@ class HomepageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+bannerView.adUnitID = "ca-app-pub-1001703997484038/9885910687"
+bannerView.rootViewController = self
+        bannerView.load(GADRequest())
+bannerView.delegate = self
+
         ref = Database.database().reference()
         
         imagePicker = UIImagePickerController()

@@ -9,9 +9,10 @@
 import UIKit
 import Firebase
 import SDWebImage
+import GoogleMobileAds
 
 
-class PostsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class PostsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, GADBannerViewDelegate {
     var postDictionary : NSDictionary?
     var currentPost : String?
     var postData = [Cheerup]()
@@ -24,6 +25,8 @@ class PostsViewController: UIViewController, UITableViewDelegate, UITableViewDat
     @IBOutlet var postText: UILabel!
     
     
+    
+    
     @IBAction func fromCheerupsToSettings(_ sender: Any) {
         self.performSegue(withIdentifier: "fromCheerupsToSettings", sender: self)
     }
@@ -34,6 +37,8 @@ class PostsViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     override func viewDidLoad() {
         super.viewDidLoad()
+  
+        
         let postsRef = Database.database().reference().child("posts")
         postsRef.observeSingleEvent(of: .value, with: {
             (snapshot) in
@@ -84,7 +89,7 @@ class PostsViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         
     }
-    
+   
     
     
     

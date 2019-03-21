@@ -1,4 +1,7 @@
 PODS:
+  - Firebase/AdMob (5.1.0):
+    - Firebase/Core
+    - Google-Mobile-Ads-SDK (= 7.31.0)
   - Firebase/Auth (5.1.0):
     - Firebase/CoreOnly
     - FirebaseAuth (= 5.0.0)
@@ -31,6 +34,7 @@ PODS:
   - FirebaseStorage (3.0.0):
     - FirebaseCore (~> 5.0)
     - GTMSessionFetcher/Core (~> 1.1)
+  - Google-Mobile-Ads-SDK (7.31.0)
   - GoogleToolboxForMac/Defines (2.1.4)
   - "GoogleToolboxForMac/NSData+zlib (2.1.4)":
     - GoogleToolboxForMac/Defines (= 2.1.4)
@@ -46,10 +50,12 @@ PODS:
   - SDWebImage/Core (4.4.0)
 
 DEPENDENCIES:
+  - Firebase/AdMob
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
   - Firebase/Storage
+  - Google-Mobile-Ads-SDK
   - SDWebImage (~> 4.0)
 
 SPEC REPOS:
@@ -61,6 +67,7 @@ SPEC REPOS:
     - FirebaseDatabase
     - FirebaseInstanceID
     - FirebaseStorage
+    - Google-Mobile-Ads-SDK
     - GoogleToolboxForMac
     - GTMSessionFetcher
     - leveldb-library
@@ -75,12 +82,13 @@ SPEC CHECKSUMS:
   FirebaseDatabase: 482bad9c2abd422bb2321194fb8c937e67426a89
   FirebaseInstanceID: 83e0040351565df711a5db3d8ebe5ea21aca998a
   FirebaseStorage: 7ca4bb7b58a25fa647b04f524033fc7cb7eb272b
+  Google-Mobile-Ads-SDK: 6e529e748b45507a2ca904e0b5a52669ba3920c4
   GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
   GTMSessionFetcher: 5fa5b80fd20e439ef5f545fb2cb3ca6c6714caa2
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   SDWebImage: b534502786e43dde36dfcaee89356fe6df30e203
 
-PODFILE CHECKSUM: 3fdc2e85fb4ce8e8cc80f6c9f6ec84745a631bb2
+PODFILE CHECKSUM: 28686f4e613373ac698bc9d74c3d5411bf27afea
 
 COCOAPODS: 1.5.3

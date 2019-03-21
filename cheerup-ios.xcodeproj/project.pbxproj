@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		216FD8EF9366A2C8AA9857E7 /* Pods_cheerup_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C61D313A59D0DD7D26286D6 /* Pods_cheerup_iosTests.framework */; };
 		5B017AB89D3F2CEC20702300 /* Pods_cheerup_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 140FA733E81B9BD411483230 /* Pods_cheerup_ios.framework */; };
+		A71C3DD9223EC13B00AB5F83 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A71C3DD8223EC13B00AB5F83 /* GoogleService-Info.plist */; };
 		A726AA1121F6E66F001E3B23 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A726AA1021F6E66F001E3B23 /* RoundedButton.swift */; };
 		A726AA1321F6E9E5001E3B23 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A726AA1221F6E9E5001E3B23 /* SettingsViewController.swift */; };
 		A726AA1921F83BAB001E3B23 /* Cheerup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A726AA1821F83BAB001E3B23 /* Cheerup.swift */; };
@@ -21,7 +22,6 @@
 		A73932FC21C4A67A0045C5A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A73932FA21C4A67A0045C5A3 /* LaunchScreen.storyboard */; };
 		A739330721C4A67A0045C5A3 /* cheerup_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A739330621C4A67A0045C5A3 /* cheerup_iosTests.swift */; };
 		A739331221C4A67A0045C5A3 /* cheerup_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A739331121C4A67A0045C5A3 /* cheerup_iosUITests.swift */; };
-		A739332021C4B6ED0045C5A3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A739331F21C4B6ED0045C5A3 /* GoogleService-Info.plist */; };
 		A739332221C4BD740045C5A3 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A739332121C4BD740045C5A3 /* SignupViewController.swift */; };
 		A739332421C4BD8A0045C5A3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A739332321C4BD890045C5A3 /* LoginViewController.swift */; };
 		A739332621C4BDA30045C5A3 /* HomepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A739332521C4BDA30045C5A3 /* HomepageViewController.swift */; };
@@ -53,6 +53,7 @@
 		1C61D313A59D0DD7D26286D6 /* Pods_cheerup_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cheerup_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2918BDE07745473CF09AB64E /* Pods-cheerup-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cheerup-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-cheerup-ios/Pods-cheerup-ios.release.xcconfig"; sourceTree = "<group>"; };
 		356A5622D8376F95AC009B9A /* Pods-cheerup-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cheerup-iosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-cheerup-iosTests/Pods-cheerup-iosTests.release.xcconfig"; sourceTree = "<group>"; };
+		A71C3DD8223EC13B00AB5F83 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A726AA1021F6E66F001E3B23 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		A726AA1221F6E9E5001E3B23 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		A726AA1821F83BAB001E3B23 /* Cheerup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cheerup.swift; sourceTree = "<group>"; };
@@ -71,7 +72,6 @@
 		A739330D21C4A67A0045C5A3 /* cheerup-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "cheerup-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A739331121C4A67A0045C5A3 /* cheerup_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cheerup_iosUITests.swift; sourceTree = "<group>"; };
 		A739331321C4A67A0045C5A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A739331F21C4B6ED0045C5A3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A739332121C4BD740045C5A3 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		A739332321C4BD890045C5A3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A739332521C4BDA30045C5A3 /* HomepageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageViewController.swift; sourceTree = "<group>"; };
@@ -165,8 +165,8 @@
 				A739332521C4BDA30045C5A3 /* HomepageViewController.swift */,
 				A73932F821C4A67A0045C5A3 /* Assets.xcassets */,
 				A73932FA21C4A67A0045C5A3 /* LaunchScreen.storyboard */,
+				A71C3DD8223EC13B00AB5F83 /* GoogleService-Info.plist */,
 				A73932FD21C4A67A0045C5A3 /* Info.plist */,
-				A739331F21C4B6ED0045C5A3 /* GoogleService-Info.plist */,
 				A73932F521C4A6740045C5A3 /* cheerup_ios.xcdatamodeld */,
 			);
 			path = "cheerup-ios";
@@ -312,7 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A73932FC21C4A67A0045C5A3 /* LaunchScreen.storyboard in Resources */,
-				A739332021C4B6ED0045C5A3 /* GoogleService-Info.plist in Resources */,
+				A71C3DD9223EC13B00AB5F83 /* GoogleService-Info.plist in Resources */,
 				A73932F921C4A67A0045C5A3 /* Assets.xcassets in Resources */,
 				A73932F421C4A6740045C5A3 /* Main.storyboard in Resources */,
 			);
@@ -624,6 +624,7 @@
 			baseConfigurationReference = 0DC7969B67AF2B96F826F655 /* Pods-cheerup-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8567B7Q6H6;
 				INFOPLIST_FILE = "cheerup-ios/Info.plist";
@@ -633,6 +634,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.DannerOpp.cheerup-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -643,6 +645,7 @@
 			baseConfigurationReference = 2918BDE07745473CF09AB64E /* Pods-cheerup-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8567B7Q6H6;
 				INFOPLIST_FILE = "cheerup-ios/Info.plist";
@@ -652,6 +655,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.DannerOpp.cheerup-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
