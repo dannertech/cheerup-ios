@@ -10,13 +10,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "cheerup-ios/PostsViewController.swift"
-            timestampString = "574720825.95306"
+            timestampString = "574796325.265386"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "20"
             endingLineNumber = "20"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "PostsViewController"
+            landmarkType = "3">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"
@@ -26,7 +26,7 @@
                   moduleName = "cheerup-ios"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/diamoniquedanner/Desktop/cheerup-ios-master-2/cheerup-ios/PostsViewController.swift"
-                  timestampString = "574733622.045426"
+                  timestampString = "574796327.564485"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "22"
@@ -41,7 +41,7 @@
                   moduleName = "cheerup-ios"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/diamoniquedanner/Desktop/cheerup-ios-master-2/cheerup-ios/PostsViewController.swift"
-                  timestampString = "574733622.049438"
+                  timestampString = "574796327.573416"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "22"
